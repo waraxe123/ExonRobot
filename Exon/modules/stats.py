@@ -51,8 +51,8 @@ async def bot_sys_stats():
 ⛖ ᴄᴘᴜ ᴜsᴀɢᴇ : {cpu}%
 ⛖ ʀᴀᴍ ᴜsᴀɢᴇ : {mem}%
 ⛖ ᴅɪsᴋ ᴜsᴀɢᴇ : {disk}%
-⛖ ᴜsᴇʀs : 0{users_db.num_users()} ᴜsᴇʀs.
-⛖ ɢʀᴏᴜᴘs : 0{users_db.num_chats()} ɢʀᴏᴜᴘs.
+⛖ ᴜsᴇʀs : {sql.num_users()} ᴜsᴇʀs.
+⛖ ɢʀᴏᴜᴘs : {sql.num_chats()} ɢʀᴏᴜᴘs.
 """
 
     return stats
